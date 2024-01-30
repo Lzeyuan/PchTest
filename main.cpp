@@ -14,8 +14,8 @@ int main()
 {
     std::vector<int> a;
     std::vector<double> b;
-    std::vector<A::A> aa;
-    std::vector<B::A> bb;
+    std::vector<A::StructA> aa;
+    std::vector<B::StructB> bb;
 
     A::foo(a, b, aa);
     B::foo(a, b, bb);

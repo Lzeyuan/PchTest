@@ -1,0 +1,11 @@
+#include <stdafx.h>
+
+namespace ${NAMESPACE}
+{
+    struct Struct${NAMESPACE}
+    {
+        std::map<float, char> temp_;
+    };
+    
+    void foo(std::vector<int> a, std::vector<double> b, std::vector<Struct${NAMESPACE}> c);
+}

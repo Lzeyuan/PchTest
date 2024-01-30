@@ -5,24 +5,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 project(PchTest)
 
+aux_source_directory(test MY_SOURCES)
 add_executable(
     ${PROJECT_NAME}
     main.cpp
-    test/test1.cpp
-    test/test2.cpp
-    test/test3.cpp
-    test/test4.cpp
-    test/test5.cpp
-    test/test6.cpp
-    test/test7.cpp
-    test/test8.cpp
-    test/test9.cpp
-    test/test10.cpp
-    test/test11.cpp
-    test/test12.cpp
-    test/test13.cpp
-    test/test14.cpp
-    test/test15.cpp
+    ${MY_SOURCES}
 )
 
 add_subdirectory(3rd)

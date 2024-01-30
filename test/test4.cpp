@@ -1,18 +1,14 @@
-#include "stdafx.h"
+#include "test4.h"
+
 namespace D
 {
-    struct A
-    {
-        std::map<float, char> temp_;
-    };
-
-    void foo(std::vector<int> a, std::vector<double> b, std::vector<A> c)
+    void foo(std::vector<int> a, std::vector<double> b, std::vector<StructD> c)
     {
         a.push_back(1);
         b.emplace_back(1.f);
-        A aa;
+        StructD aa;
         aa.temp_.emplace(2.2f, 'a');
         c.emplace_back(aa);
+        printf("D\n");
     }
-
 }

@@ -1,15 +1,14 @@
-#include "stdafx.h"
-namespace M{
-struct A {
-    std::map<float,char> temp_;
-};
+#include "test13.h"
 
-void foo(std::vector<int> a, std::vector<double> b, std::vector<A> c) {
-    a.push_back(1);
-    b.emplace_back(1.f);
-    A aa;
-    aa.temp_.emplace(2.2f, 'a');
-    c.emplace_back(aa);
-}
-
+namespace M
+{
+    void foo(std::vector<int> a, std::vector<double> b, std::vector<StructM> c)
+    {
+        a.push_back(1);
+        b.emplace_back(1.f);
+        StructM aa;
+        aa.temp_.emplace(2.2f, 'a');
+        c.emplace_back(aa);
+        printf("M\n");
+    }
 }
